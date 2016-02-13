@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="//unslider.com/unslider.js" 'data-turbolinks-track' = true></script>
+<!--<script src="app/assets/javascripts/unslider.js" 'data-turbolinks-track' = true></script>-->
+</head>
+<body>
+
+  <div class="header">
+	<div class="container">
+    <div class="row">
+      
+      
+      <ul class="nav">
+        <li><%= link_to 'Welcome', root_path =%></li>
+        <li><%= link_to 'Portfolio', portfolio_path =%></li>
+        <li><a href="Blog">Blog</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</div>
+  
+<%= yield %>
+  
+<div class="footer">
+	<div class="container">
+    <div class="social">
+      <ul class="pull-right">
+        <li><a href="https://www.facebook.com/sarina.rahman"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABzUlEQVRYhcVXPU4CURCeBL4JBeFn5gh4ACoPYOkBhBNQcQQ7G4knWNbG2gYTCzvrrQylNtZAZ0IBjRa7mAds5M3ycCfZZJt5880337w3Q+RvdW5zH4IIggSKOQQrCFbZfwJBxMI9Iqobzj1gDTqDIIZiycrfPh8USwhiatDZMaFrrDyCYO0beA9I6jsiopotdJM6EEyLBs4BMqUmdbxio4UuFLNQwZ2yzNBC93DmJwjugviLiZqZduFPFr6DYgjBAIIBC78cLEeeJlh5ZMzmNe8gVr718B9te6WtZlI7FOd5NPoAgGC91aIQ3BtVvSaiihO3Wm1WLyrtyiULP3qeEW+c65ZLJnNeuFlDMSwgyCUR1Ynb3C+kZjd9rV4X6QoW7hEEY4PTOytPoHjYqrvwFStPsu/DwGREECQGxDd5wtsqhyAyAEgIgkVIACz8bCjlnCBYBWbgzcDAygbARR5AhCkAxbw0AFkJ/EUYnoHEpNoTAIiKXkRBAGTzY4GrOACA36s4a5343wE4j5H5OT4WwN5zTGQbSAIwsDOQpOY9kkHxtRnBIBiw8pMh+/yRjIhKH0pTQZY6lrtMlLWYOFbiauZaicvprm3W83HI9fwHG8AdPKVFx58AAAAASUVORK5CYII="/></a></li>
+        <li><a href="http://sarinarahman.tumblr.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACBUlEQVRYhc1XvWobQRD+4PYbC3NwuZk3sGq7cfo0IU3iWoUhL+CAHyBFcCU/QcLdE6QKmJA3MOQ6ubPBuDcCk8JKIWGwC53skyxLuycpysDCFTfzfTt/OwP4SywqLSozKgsau1T2qeyX3wWVmai0AMQBdudIgiaVOY1/xeTe59DYozJHguYi0A0xaVM58AV+RmSo2wbQCL31FpVndYGnEOkgwZYXtqSyQ+P1ssArYbmWVHbm33wF4FUSszzRoLKzKvBKOM4wLSfE5DjEUJRGe5LKNo2fahBpT7q+GZLtVN4AiAAgSqMPNbwwGCtRKvO6N6hDoCSRj2zEQU1GeQpgc2ECxh6AGKLS8lJSuaLyEMDGWPhSJEy4+3hSHngTUWmBysznZ2fu8+waHopT9y7AmxmoLNZIoACNXU+FczE5ofFrFZAJX4vJyehQ+TsgD7qgsh+YQBdVAnWTsPRA/z8g4B+C5RMoQ+CVhCvyQOFdhjMIvF+AQObfiJ7O5UQV7E4xfOdlazg/BrfiP5O1T+NHMflJ5XdJZd/nbXlsxUD4Y+TMvZ3VjGj85nGR/Ekj9Dk2dt0r9+YF/FhUfs0BHzybmCVwICkNnYrKEZWHTt0XUflB462Hbnsa8381knXw4pi+5qF0GIq1juVVTywxHEGLSUXWuJqNe2O0nPYC3L2U5XRSVrKePwAAmB1zBiIZ4wAAAABJRU5ErkJggg=="/></a></li>
+        <li><a href="https://www.instagram.com/sarinart/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACeUlEQVRYhcWXT24aMRTGv8rzPSF1xAzPIl0SwT779gJkRRdZcB3Ihl4BbpJeIChCSk6QZYRYpwuqhHbBEDlgz3hIoliyxCDb7/f++hmIH6moDKmcUjmn5YrKNZXr4vecyqmoDAGkNc6tGBl6VM5o+Ues/IuZtHykcoYMvbeIboiVCZV/YwUfgGz3TgA06mrdpfLuWMEekFtk6EbJlpac0XL5XsIdtyylJWfVmn+AcBeizBKNkNmpfCrAHmImLZdUPgXOuoMvJsTKL8/iZ1EZo4Usyn/uaCETlTGVzx6Qyb7pe95oVxnXFryvmMrYlx2vUpTKmc/stTVPcULlpti/2VnC5w4qZy/bfEWGlsva6qY4cQRsXhT0BDYtHwGkEJVhIGofjgBo+wCK4DyUoTIEldOjATJ099LqC77iG1KcIEW7CoDKKaic1wbI0aHljWPOG+TohJaXAMxBy1UZQKLJuajci8p9osl3AKDy2nPYdbH+h7P+vBTAcgUq12UARs3F7j80ocjRCVU65OigCd19GzUXFRZY1wfI0AsCZOjVB6hwgQuQaNIHAFouPOZcFC7oRwMULigNQheAyt9FEJ66ELRcIMcpAIjKVQ0LzCvT0AWQbe5eOmnYc0uqqFy6ayMAppWF6ABgC3GVaNJHE4omNNGk72oeC1D0j+Wl2OTmZyjoqqbJzaCImXApLvI6fBmlaJcEanDScoUU7ZjLqOw6HgEAUrRNbgZGzUXUzM1gV4qjruPCTxPPwmdRGb2hIRnFNSTb0aDyNhCt79mS3SLYpn9yU7p1xae25a4lAu44Snidh4kzPvFp9toau8fpYw1zv8vjdH98yPP8P7eWpnHVhMdGAAAAAElFTkSuQmCC"/></a></li>
+      </ul>
+      <div class="credit pull-right">Icon made by <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    </div>
+	</div>
+</div>
+
+ 
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.banner').unslider({
+        speed: 400,
+        delay: 3000,
+        fluid: true
+    });
+});
+</script> 
+  
+</body>
+</html>
+

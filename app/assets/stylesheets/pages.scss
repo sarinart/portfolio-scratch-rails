@@ -1,0 +1,212 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	padding-top: 20px;
+}
+
+.header {
+	background-color: #fff;
+  color: #061306;
+  height: 100px;
+ 
+}
+
+.header h1 {
+
+}
+
+.header h1, .nav li a {
+	font-size: 18px;
+  font-weight: 300;
+  line-height: 60px;
+  height: 60px;
+  color: #061306;
+}
+
+.nav {
+	
+}
+
+ .nav li a {
+ 	display: inline;
+  margin: 0;
+  text-align: right;
+  transition: background-color 0.5s;
+ }
+ 
+ .nav li {
+ 	display: inline-block;
+  margin: 0;
+ }
+ 
+ .nav li a:hover {
+ 	transition: background-color 0.5s;
+ }
+ 
+.main .jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://farm2.staticflickr.com/1536/24077160774_c2f7ff7ca4_h.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 600px;
+  margin-bottom: 0;
+  }
+  
+.main {
+	background-color: #061306;
+}
+
+.main h1 {
+	text-align: right;
+  font-size: 50px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.highlight {
+	color: rgba(216, 243, 216, 0.8);
+}
+
+.main .jumbotron p {
+	text-align: right;
+}
+
+.btn-lg {
+	background-color: #061306;
+}
+
+.main a, .main p {
+	
+	color: #d8f3d8;
+  font-size: 18px;
+  font-weight: 100;
+  float: right;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.btn-lg:hover, .main a:hover {
+	text-decoration: none;
+  color: #b5ccb5;
+  background-color: #123a12;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.supporting {
+    background-color: #061306;
+}
+
+.supporting .container {
+    padding-bottom: 20px;
+}
+
+.footer {
+	background-color: #b5ccb5;
+  height: 100px;
+  margin-top: 0;
+}
+
+.footer ul {
+	float: right;
+  padding-left: none;
+}
+
+.footer li {
+	display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+.credit {
+	text-align: right;
+  font-weight: 300;
+  margin-left: 50px;
+  float: left;
+  font-size: 10px;
+  width: 250px;
+  padding-right: 0px;
+}
+
+.social {
+	width: 300px;
+  float: right;
+}
+
+/* unslider styling */
+.unslider {
+    /*margin: auto;*/
+}
+.banner { 
+    position: relative; 
+    overflow: auto; 
+}
+
+.banner li { 
+    list-style: none; 
+}
+
+.banner ul li { 
+    float: left;
+ 
+}
+
+.unslider {
+    width: 100%;
+}
+
+.banner-holder {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* grid layout styling */
+.col-md-6 img {
+    width: 100%;
+    /*padding-bottom: 15px;*/
+}
+
+
+
+/* responsiveness/mobile styling */
+@media (max-width: 500px), (max-device-width: 480px) {
+	.header {
+  	height: 200px;	
+  }
+  
+  .nav li {
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+  }
+  .nav li a {
+  	width: 95%;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    height: 40px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 850px) {
+  .banner-holder {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+  .row .container {
+    padding: 0;
+  }
+  .col-md-6 {
+    padding-top: 30px;
+  }
+}
+@media (orientation: portrait), (max-device-width: 500px) {
+	.nav li a {
+  	
+  }
+}

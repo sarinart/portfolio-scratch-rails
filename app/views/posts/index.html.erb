@@ -1,5 +1,5 @@
 
-
+<div class="main">
 <ul id="posts">
   <% @posts.each do |p| %>
     <li>
@@ -8,3 +8,4 @@
   <% end %>
 </ul>
 <%= link_to 'create new post', new_post_path, class: 'new_post' %>
+</div>

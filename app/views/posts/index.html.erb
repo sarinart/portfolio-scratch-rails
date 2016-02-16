@@ -1,0 +1,10 @@
+
+
+<ul id="posts">
+  <% @posts.each do |p| %>
+    <li>
+      <%= link_to p.title, post_path(p), , class: 'post_title' %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to 'create new post', new_post_path, class: 'new_post' %>

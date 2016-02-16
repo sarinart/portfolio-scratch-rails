@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pages#welcome'
   get '/portfolio' => 'pages#portfolio', as: :portfolio
-  get '/posts' => 'posts#index', as: :posts
+  get '/posts' => 'pages#index', as: :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

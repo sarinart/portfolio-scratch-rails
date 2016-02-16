@@ -3,4 +3,7 @@ class PagesController < ApplicationController
   end
   def portfolio
   end
+  def index
+        @posts = Post.all
+  end
 end

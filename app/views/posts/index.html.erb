@@ -1,0 +1,10 @@
+<div class="main">
+    <% @posts.each do |p| %>
+        <div class="blogtitle">
+            <%= p.title =%>
+        </div>
+        <div class="blogbody">
+            <%= p.body =%>
+        </div>
+    <% end %>
+</div>

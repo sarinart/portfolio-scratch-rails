@@ -2,9 +2,10 @@ Rails.application.routes.draw do
   root 'pages#welcome'
   get '/portfolio' => 'pages#portfolio', as: :portfolio
   resources :posts
-  get '/posts' => 'posts#index', as :posts
+  get '/posts' => 'posts#index'
   get '/posts/new' => 'posts#new'
   get '/posts/:id' => 'posts#show'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

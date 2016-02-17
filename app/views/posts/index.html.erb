@@ -1,12 +1,14 @@
 <div class="main">
     <div class="container">
-    <% @posts.each do |p| %>
-        <div class="blogtitle">
-            <h1><%= p.title =%></h1>
+        <div class="blog">
+        <% @posts.each do |p| %>
+            <div class="blogtitle">
+                <h1><%= p.title =%></h1>
+            </div>
+            <div class="blogbody">
+                <p><%= p.body =%></p>
+            </div>
+        <% end %>
         </div>
-        <div class="blogbody">
-            <p><%= p.body =%></p>
-        </div>
-    <% end %>
     </div>
 </div>

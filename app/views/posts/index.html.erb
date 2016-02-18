@@ -1,6 +1,7 @@
 <div class="main">
     <div class="container">
         <div class="blog">
+        <%= link_to 'New Post', new_post_path, :class => "btn-lg newpost" %><br>
         <% @posts.each do |p| %>
             <div class="blogtitle">
                 <h1><%= p.title =%></h1>

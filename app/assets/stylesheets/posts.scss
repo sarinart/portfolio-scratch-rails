@@ -10,17 +10,28 @@
     margin-left: auto;
     min-height: 400px;
 }
+
 .blogtitle h1, .blogbody p {
     //margin-bottom: 30px;
     //text-align: left;
 }
 
+form {
+    float: none; 
+     
+}
+
+
 .newpost {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #d8f3d8;
     border: 2px solid #123a12;
-    transition: border 0.5s;
+    
 }
 
 .newpost:hover {
-    border: 2px solid #061306;
-    transition: border 0.5s;
+    /*border: 2px solid #061306;
+    transition: border 0.5s;*/
 }

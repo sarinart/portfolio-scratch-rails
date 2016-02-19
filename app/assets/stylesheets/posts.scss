@@ -11,10 +11,28 @@
     min-height: 400px;
 }
 
-.blogtitle h1, .blogbody p {
-    //margin-bottom: 30px;
-    //text-align: left;
-    
+.main .blog .blogtitle h1 {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 7px;
+}
+
+.blogtitle .date {
+    padding-top: 40px;  
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;  
+}
+
+.blogbody {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #123a12;
+}
+
+
+.blogbody p {
+    padding-bottom: 10px;
+    float: none;
 }
 
 .main .blog form p {
@@ -22,11 +40,15 @@
      
 }
 
+.button-breather {
+    margin-bottom: 30px;  
+    margin-top: 10px;  
+}
 
 .newpost {
     
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     color: #d8f3d8;
     border: 2px solid #123a12;
     
@@ -35,4 +57,49 @@
 .newpost:hover {
     /*border: 2px solid #061306;
     transition: border 0.5s;*/
+}
+
+.blog form {
+    padding-top: 30px;
+}
+.inside {
+    color: #d8f3d8;
+    border-radius: 6px;
+    border: 2px solid #123a12;
+    padding: 7px;
+    margin: auto;
+    width: 100%;
+    resize: none;
+    background-color: #061306;
+}
+
+.inside:focus {
+    background-color: #fff;
+    color: #123a12;
+}
+
+.body-inside {
+    min-height: 150px;
+}
+
+/* responsiveness/mobile styling */
+@media (max-width: 500px), (max-device-width: 480px) {
+    .blog {
+        width: 85%;
+    }
+    .blogtitle h1 {
+        padding-bottom: 3px;
+    }
+}
+
+@media (max-width: 992px), (max-device-width: 992px) {
+    .blogtitle .date {
+        padding-top: 5px;
+        text-align: left;
+        float: none;
+        margin: none;
+    }
+    .blogtitle h1 {
+        padding-bottom: 3px;
+    }
 }

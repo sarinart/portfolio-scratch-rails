@@ -11,6 +11,9 @@
     min-height: 400px;
 }
 
+.eachpost {
+    border-bottom: 1px solid #123a12;
+}
 .main .blog .blogtitle h1 {
     font-size: 40px;
     text-align: left;
@@ -25,13 +28,13 @@
 }
 
 .blogbody {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #123a12;
+    padding-bottom: 10px;
+    //border-bottom: 1px solid #123a12;
 }
 
 
 .blogbody p {
-    padding-bottom: 10px;
+    
     float: none;
 }
 
@@ -57,6 +60,18 @@
 .newpost:hover {
     /*border: 2px solid #061306;
     transition: border 0.5s;*/
+}
+
+.delete {
+    background-color: #061306;
+    border: none;
+    font-weight: 100;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.delete:hover {
+    color: #123a12;    
 }
 
 .blog form {

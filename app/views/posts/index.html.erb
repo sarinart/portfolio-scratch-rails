@@ -4,22 +4,28 @@
         <div class="button-breather">
             <%= link_to 'New Post', new_post_path, :class => "btn-lg newpost" %><br>
         </div>
-        <% @posts.each do |p| %>
-            <div class="blogtitle">
-                <div class="row">
-                    <div class="col-md-9">
-                            <h1><%= p.title =%></h1>
-                    </div>
-                    <div class="col-md-3">
-                            <p class="date"><%= p.created_at.strftime("%B, %d, %Y") =%></p>
+        
+            <% @posts.each do |p| %>
+            <div class="eachpost">
+                <div class="blogtitle">
+                    <div class="row">
+                        <div class="col-md-9">
+                                <h1><%= p.title =%></h1>
+                                
+                        </div>
+                        <div class="col-md-3">
+                                <p class="date"> <%= p.created_at.strftime("%B, %d, %Y") =%> </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="blogbody">
-                <p><%= p.body =%></p>
-            </div>
-            
-        <% end %>
+                <div class="blogbody">
+                    <p><%= p.body =%></p>
+                    <%= button_to "delete", post_path(p), method: :delete, data: {confirm: "Really delete the post?"}, class: "delete" %>
+                </div>
+                
+            </div> 
+            <% end %>
+        
         </div>
     </div>
 </div>

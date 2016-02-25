@@ -1,0 +1,19 @@
+<%= form_for(@post) do |f| %>
+  <ul>
+    <% @post.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+
+  <p>
+     <%= f.text_field :title, placeholder: "title", class: "inside" %>
+  </p>
+              
+  <p>
+     <%= f.text_area :body, placeholder: "body", class: "inside body-inside" %>
+  </p>
+               
+  <p>
+     <%= f.submit 'Post', :class => 'btn-lg newpost' %>
+  </p>
+<% end %>

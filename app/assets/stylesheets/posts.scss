@@ -18,13 +18,15 @@
     font-size: 40px;
     text-align: left;
     margin-top: 7px;
+    padding-top: 35px;
 }
 
 .blogtitle .date {
-    padding-top: 40px;  
+    padding-top: 50px;  
     font-size: 12px;
     color: rgba(255, 255, 255, 0.7);
-    font-style: italic;  
+    font-style: italic; 
+    padding-right: 5px; 
 }
 
 .blogbody {
@@ -34,7 +36,7 @@
 
 
 .blogbody p {
-    
+    text-align: justify;
     float: none;
 }
 

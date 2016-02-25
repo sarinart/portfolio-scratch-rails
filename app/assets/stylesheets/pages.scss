@@ -1,8 +1,27 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
+* {
+    margin: 0;
+}
+body, html {
 	font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%; 
+    margin-bottom: -100px;
+    background-color: #061306;   
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.page-wrap:after, .footer {
+    height: 100px;
 }
 
 .container {
@@ -92,9 +111,9 @@ body {
 
 .btn-lg:hover, .main a:hover {
 	text-decoration: none;
-  color: #b5ccb5;
-  background-color: #123a12;
-  transition: color 0.5s, background-color 0.5s;
+    color: #b5ccb5;
+    background-color: #123a12;
+    transition: color 0.5s, background-color 0.5s;
 }
 
 .supporting {
@@ -106,29 +125,29 @@ body {
 }
 
 .footer {
-	background-color: #b5ccb5;
-  height: 100px;
-  margin-top: 0;
+    background-color: #b5ccb5;
+    //height: 100px;
+    margin-top: 0;
 }
 
 .footer ul {
 	float: right;
-  padding-left: none;
+    padding-left: none;
 }
 
 .footer li {
 	display: inline-block;
-  padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .credit {
 	text-align: right;
-  font-weight: 300;
-  margin-left: 50px;
-  float: left;
-  font-size: 10px;
-  width: 250px;
-  padding-right: 0px;
+    font-weight: 300;
+    margin-left: 50px;
+    float: left;
+    font-size: 10px;
+    width: 250px;
+    padding-right: 0px;
 }
 
 .social {

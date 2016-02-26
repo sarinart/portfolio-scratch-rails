@@ -1,13 +1,19 @@
 <div class="main">
 <div class="container">    
     <div class="blog">
+    <div class="eachpost">
         <div class="blogtitle">
             <h1><%= @post.title %></h1>
         </div>
-        <div class="blogbody"
+        <div class="blogbody">
+            <p class="date"> <%= @post.created_at.strftime("%B, %d, %Y") =%> </p>
             <p><%= @post.body %></p>
+            <%= link_to "edit", edit_post_path(@post), class: "button_to links" %>
+            <%= button_to "delete", post_path(@post), method: :delete, data: {confirm: "Really delete the post?"}, class: "links" %>
+            <%= link_to "see all posts", posts_path, class: "button_to links" %>
         </div>
-        <%= link_to "See all posts", posts_path, class: "btn-lg newpost" %>
+    </div>
+        
     </div>
 </div>
 </div>

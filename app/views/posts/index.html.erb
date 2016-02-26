@@ -10,7 +10,7 @@
                 <div class="blogtitle">
                     <div class="row">
                         <div class="col-md-9">
-                                <h1><%= p.title =%></h1>
+                                <h1><%=link_to p.title, post_path(p) =%></h1>
                                 
                         </div>
                         <div class="col-md-3">
@@ -19,8 +19,11 @@
                     </div>
                 </div>
                 <div class="blogbody">
-                    <p><%= p.body =%></p>
-                    <%= button_to "delete", post_path(p), method: :delete, data: {confirm: "Really delete the post?"}, class: "delete" %>
+                    <p><%= simple_format(p.body) =%></p>
+                    <%= link_to "edit", edit_post_path(p), class: "button_to links" %>
+                    <%= button_to "delete", post_path(p), method: :delete, data: {confirm: "Really delete the post?"}, class: "links" %>
+                    
+                    
                 </div>
                 
             </div> 

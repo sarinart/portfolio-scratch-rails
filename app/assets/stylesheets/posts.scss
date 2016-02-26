@@ -5,7 +5,7 @@
 
 .blog {
     margin-bottom: 40px;
-    width: 70%;
+    width: 78%;
     margin-right: auto;
     margin-left: auto;
     min-height: 400px;
@@ -14,18 +14,27 @@
 .eachpost {
     border-bottom: 1px solid #123a12;
 }
-.main .blog .blogtitle h1 {
+.main .blog .blogtitle h1, .main .blog .blogtitle h1 a {
     font-size: 40px;
     text-align: left;
     margin-top: 7px;
     padding-top: 35px;
+    float: none;
 }
 
-.blogtitle .date {
-    padding-top: 50px;  
+.main .blog .blogtitle h1 a:hover {
+    color: rgba(255,255,255,0.5);
+    background-color: #061306;
+}
+
+.blogtitle .date, .blogbody .date {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.7);
     font-style: italic; 
+}
+
+.blogtitle .date {
+    padding-top: 50px;
     padding-right: 5px; 
 }
 
@@ -45,6 +54,7 @@
      
 }
 
+/*buttons and links styling */
 .button-breather {
     margin-bottom: 30px;  
     margin-top: 10px;  
@@ -59,23 +69,33 @@
     
 }
 
-.newpost:hover {
-    /*border: 2px solid #061306;
-    transition: border 0.5s;*/
+.main .allposts-btn {
+    float: none;
 }
 
-.delete {
+
+
+.button_to {
+    display: inline;
+}
+
+.links, .main .links {
     background-color: #061306;
     border: none;
     font-weight: 100;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.7);
+    float: none;
 }
 
-.delete:hover {
-    color: #123a12;    
+.links:hover, .main .blog a:hover {
+    color: #123a12;
+    background-color: transparent; 
+    transition: none;
+      
 }
 
+/* new post form styling */
 .blog form {
     padding-top: 30px;
 }

@@ -226,8 +226,10 @@ body, html {
     padding-top: 30px;
   }
 }
-@media (orientation: portrait), (max-device-width: 500px) {
-	.nav li a {
-  	
-  }
+
+@media (min-width: 1500px) {
+    .main .jumbotron {
+        height: 1000px;
+    }
 }
+

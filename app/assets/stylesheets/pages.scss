@@ -63,7 +63,7 @@ body, html {
   margin: 0;
  }
  
- .nav li a:hover, .nav li a:active {
+ .nav li a:hover, .nav li a:active, .nav li a:focus {
  	transition: background-color 0.5s;
  }
  

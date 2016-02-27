@@ -1,8 +1,8 @@
 <div class="main">
     <div class="container">
         <div class="blog">
-        <div class="button-breather" onclick="">
-            <%= link_to 'New Post', new_post_path, :class => "btn-lg newpost" %><br>
+        <div onclick="" class="button-breather">
+            <%= link_to 'New Post', new_post_path, :onclick => '""', :class => "btn-lg newpost" %><br>
         </div>
         
             <% @posts.each do |p| %>

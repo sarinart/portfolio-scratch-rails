@@ -4,10 +4,22 @@
 .main .comment {
     text-align: justify;
     float: none;
+    margin-bottom: 0;
+    color: rgba(250, 255, 250, 0.8);
+    font-size: 14px;
 }
 
 .commenter {
     color: #336B33;
     font-weight: 500;
     margin-bottom: 0px;
+    font-style: italic;
+}
+
+.blog .new_comment {
+    padding-top: 10px;
+}
+
+h3 {
+    font-weight: 300;
 }

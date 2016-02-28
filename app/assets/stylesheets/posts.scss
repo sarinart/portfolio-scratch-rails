@@ -9,7 +9,7 @@
 
 .blog {
     margin-bottom: 40px;
-    width: 78%;
+    width: 85%;
     margin-right: auto;
     margin-left: auto;
     min-height: 400px;
@@ -23,6 +23,7 @@
     text-align: left;
     margin-top: 7px;
     padding-top: 35px;
+    padding-bottom: 0;
     float: none;
 }
 
@@ -129,7 +130,7 @@
 /* responsiveness/mobile styling */
 @media (max-width: 500px), (max-device-width: 480px) {
     .blog {
-        width: 85%;
+        width: 90%;
     }
     .blogtitle h1 {
         padding-bottom: 3px;

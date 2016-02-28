@@ -23,7 +23,7 @@
                
                     <%= link_to "edit", edit_post_path(p), class: "button_to links" %>
                     <%= button_to "delete", post_path(p), method: :delete, data: {confirm: "Really delete the post?"}, class: "links" %>
-                    
+                    <%= link_to pluralize(p.comments.size, "comment"), post_path(p), class: "button_to links" %>
                     
                 </div>
                 

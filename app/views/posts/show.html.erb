@@ -12,11 +12,10 @@
             <%= button_to "delete", post_path(@post), method: :delete, data: {confirm: "Really delete the post?"}, class: "links" %>
             <%= link_to "see all posts", posts_path, class: "button_to links" %>
         </div>
-        <%= render partial: 'posts/comment', collection: @post.comments %>
-        <%= render partial: 'comments/form' %>
         
     </div>
-        
+        <%= render partial: 'posts/comment', collection: @post.comments %>
+        <%= render partial: 'comments/form' %>    
     </div>
 </div>
 </div>

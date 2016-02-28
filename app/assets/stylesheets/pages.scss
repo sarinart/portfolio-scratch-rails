@@ -63,8 +63,12 @@ body, html {
   margin: 0;
  }
  
- .nav li a:hover, .nav li a:active, .nav li a:focus {
+ .nav li a:hover {
  	transition: background-color 0.5s;
+ }
+ 
+ .flash {
+     text-align: center;
  }
  
 .main .jumbotron {

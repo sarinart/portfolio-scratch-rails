@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'pages#welcome'
   get '/portfolio' => 'pages#portfolio', as: :portfolio
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   get '/posts' => 'posts#index'
   get '/posts/new' => 'posts#new'
   get '/posts/:id' => 'posts#show'

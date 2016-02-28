@@ -1,0 +1,15 @@
+<h3>Post a Comment</h3>
+
+<%= form_for [ @post, @comment ] do |f| %>
+  <p>
+    
+    <%= f.text_field :author_name, placeholder: "your name", class: "inside" %>
+  </p>
+  <p>
+    
+    <%= f.text_area :body, placeholder: "comment", class: "inside body-inside" %>
+  </p>
+  <p>
+    <%= f.submit 'Post', class: 'btn-lg newpost' %>
+  </p>
+<% end %>

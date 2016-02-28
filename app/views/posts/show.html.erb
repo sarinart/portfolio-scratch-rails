@@ -13,7 +13,8 @@
             <%= link_to "see all posts", posts_path, class: "button_to links" %>
         </div>
     </div>
-        
+        <%= render partial: 'comments/form' %>
+        <%= render partial: 'posts/comment', collection: @post.comments %>
     </div>
 </div>
 </div>

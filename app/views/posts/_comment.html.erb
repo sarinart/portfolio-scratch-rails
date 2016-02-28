@@ -1,5 +1,5 @@
 <div>
   <h4 class="commenter"><%= comment.author_name %></h4>
-  <p class="comment"><%= comment.body %></p>
+  <p class="comment"><%= simple_format(comment.body) %></p>
   <%= button_to "delete", [comment.post, comment], method: :delete, class: "links" %>
 </div>

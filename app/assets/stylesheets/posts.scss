@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 /* blog styling */
 
+*:focus {
+    outline: none;
+}
+
 .blog {
     margin-bottom: 40px;
     width: 78%;

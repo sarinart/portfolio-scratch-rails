@@ -79,6 +79,7 @@ body, html {
  
  .flash {
      text-align: center;
+     padding-right: 15px;
  }
  
 .main .jumbotron {
@@ -206,34 +207,30 @@ body, html {
 
 
 /* responsiveness/mobile styling */
-@media (max-width: 500px), (max-device-width: 480px) {
-	.header {
-  	height: 220px;	
-  }
-  
-  .nav li, .flash {
-    width: 100%;
-    text-align: center;
-    line-height: 20px;
-    height: 20px;
-  }
-  .nav li a {
-  	width: 95%;
-    margin: 0;
-    display: inline-block;
-    text-align: center;
-    line-height: 20px;
-    height: 40px;
-    border-radius: 4px;
-    -webkit-text-size-adjust:100%
-  }
-  .flash {
-      margin-top: 5px;
-      line-height: 20px;
-    height: 40px;
-  }
+@media (min-width: 1300px) {
+    .main .jumbotron {
+        height: 1000px;
+    }
 }
 
+@media (max-width: 1000px) {
+    .col-md-3 {
+        margin: auto;
+    }
+    .flash {
+      width: 100%;
+      padding-right: 0;
+      float: left;
+  }
+    .header {
+  	  height: 130px;	
+  }
+    .header .nav {
+        margin: auto;
+        width: 85%;
+    }
+}
+ 
 @media (max-width: 850px) {
   .banner-holder {
     padding-left: 0px;
@@ -247,9 +244,44 @@ body, html {
   }
 }
 
-@media (min-width: 1300px) {
-    .main .jumbotron {
-        height: 1000px;
+@media (max-width: 700px) {
+    .nav li a {
+        padding: 10px 10px;
     }
 }
+
+@media (max-width: 500px), (max-device-width: 480px) {
+	.header {
+  	height: 220px;	
+  }
+  
+  .nav li, .flash {
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    height: 30px;
+  }
+  .nav li a {
+  	width: 95%;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    height: 40px;
+    border-radius: 4px;
+    -webkit-text-size-adjust: 100%
+    
+  }
+  .flash {
+      margin-top: 5px;
+      line-height: 20px;
+      height: 40px;
+      padding-left: 0;
+      
+      padding-top: 3px;
+      /*text-align: center;
+      float: none;*/
+  }
+}
+
 

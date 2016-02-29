@@ -21,20 +21,26 @@
   <div class="container">
     <div class="row">
       
+      <div class="col-md-9">
+        <ul class="nav">
+            <li><%= link_to 'Welcome', root_path =%></li>
+            <li><%= link_to 'Portfolio', portfolio_path =%></li>
+            <li><%= link_to 'Blog', posts_path =%></li>
+            <li><a href="About">About</a></li>
+            <li><a href="Contact">Contact</a></li>
+            
+        </ul>
+      </div>
       
-      <ul class="nav">
-        <li><%= link_to 'Welcome', root_path =%></li>
-        <li><%= link_to 'Portfolio', portfolio_path =%></li>
-        <li><%= link_to 'Blog', posts_path =%></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Contact">Contact</a></li>
-      </ul>
+      <div class="col-md-3">
+        <p class="flash"><%= flash.notice %></p>
+      </div>
       
     </div>
   </div>
 </div>
 
-<p class="flash"><%= flash.notice %></p>
+
   
 <%= yield %>
 </div>  
@@ -68,8 +74,14 @@
         
     });
 });
-</script> 
-  
+</script>
+<script type="text/javascript"> 
+    $(function() {
+        $('.flash').delay(500).fadeIn('normal', function() {
+            $(this).delay(2500).fadeOut('slow');
+        });
+    });
+</script>  
 </body>
 </html>
 

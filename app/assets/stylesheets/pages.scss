@@ -4,6 +4,16 @@
 * {
     margin: 0;
 }
+
+.flash {
+    color: #8DBF8D;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    float: right;
+}
+
 body, html {
 	font-family: 'Roboto', sans-serif;
     height: 100%;
@@ -198,10 +208,10 @@ body, html {
 /* responsiveness/mobile styling */
 @media (max-width: 500px), (max-device-width: 480px) {
 	.header {
-  	height: 200px;	
+  	height: 220px;	
   }
   
-  .nav li {
+  .nav li, .flash {
     width: 100%;
     text-align: center;
     line-height: 20px;
@@ -215,6 +225,9 @@ body, html {
     line-height: 20px;
     height: 40px;
     border-radius: 4px;
+  }
+  .flash {
+      margin-top: 5px;
   }
 }
 

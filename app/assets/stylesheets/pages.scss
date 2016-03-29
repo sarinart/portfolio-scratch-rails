@@ -5,6 +5,13 @@
     margin: 0;
 }
 
+//BODY
+body, html {
+	font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+//FLASH NOTICES
 .flash {
     color: #8DBF8D;
     font-weight: 500;
@@ -12,13 +19,11 @@
     line-height: 60px;
     height: 60px;
     float: right;
+    text-align: center;
+    padding-right: 15px;
 }
 
-body, html {
-	font-family: 'Roboto', sans-serif;
-    height: 100%;
-}
-
+//STICKY FOOTER CODE
 .page-wrap {
     min-height: 100%; 
     margin-bottom: -100px;
@@ -38,6 +43,7 @@ body, html {
 	padding-top: 20px;
 }
 
+//HEADER STYLING 
 .header {
 	background-color: #fff;
   color: #061306;
@@ -45,10 +51,7 @@ body, html {
  
 }
 
-.header h1 {
-
-}
-
+//NAVIGATION MENU
 .header h1, .nav li a {
 	font-size: 18px;
   font-weight: 300;
@@ -57,9 +60,6 @@ body, html {
   color: #061306;
 }
 
-.nav {
-	
-}
 
  .nav li a {
  	display: inline;
@@ -77,12 +77,7 @@ body, html {
  	transition: background-color 0.5s;
  }
  
-//  flash notices
- .flash {
-     text-align: center;
-     padding-right: 15px;
- }
- 
+ //WELCOME PAGE JUMBOTRON
 .main .jumbotron {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://farm2.staticflickr.com/1536/24077160774_c2f7ff7ca4_h.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -111,6 +106,7 @@ body, html {
 	text-align: right;
 }
 
+//BUTTONS AND HOVER
 .btn-lg {
 	background-color: #061306;
     
@@ -132,6 +128,31 @@ body, html {
     transition: color 0.5s, background-color 0.5s;
 }
 
+//UNSLIDER STYLING
+.banner { 
+    position: relative; 
+    overflow: auto; 
+}
+
+.banner li { 
+    list-style: none; 
+}
+
+.banner ul li { 
+    float: left;
+ 
+}
+
+.unslider {
+    width: 100%;
+}
+
+.banner-holder {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+//PORTFOLIO PAGE
 .supporting {
     background-color: #061306;
 }
@@ -140,6 +161,12 @@ body, html {
     padding-bottom: 20px;
 }
 
+.col-md-6 img {
+    width: 100%;
+    /*padding-bottom: 15px;*/
+}
+
+//FOOTER WITH SOCIAL ICONS
 .footer {
     background-color: #b5ccb5;
     //height: 100px;
@@ -171,41 +198,31 @@ body, html {
   float: right;
 }
 
-/* unslider styling */
+//ABOUT PAGE
 
-.banner { 
-    position: relative; 
-    overflow: auto; 
+.main .about-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://farm2.staticflickr.com/1536/24077160774_c2f7ff7ca4_h.jpg) no-repeat center center fixed;
+  background-size: cover;  
+}
+.main .about p {
+    float: none;
+    text-align: justify;
 }
 
-.banner li { 
-    list-style: none; 
+.main .about a {
+    float: none;
+    
+    text-decoration: underline;
 }
 
-.banner ul li { 
-    float: left;
- 
-}
-
-.unslider {
-    width: 100%;
-}
-
-.banner-holder {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-/* grid layout styling */
-.col-md-6 img {
-    width: 100%;
-    /*padding-bottom: 15px;*/
+.main .about a:hover {
+    background-color: transparent;
+    color: #8DBF8D;
 }
 
 
 
-
-/* responsiveness/mobile styling */
+//RESPONSIVE DESIGN WITH MEDIA QUERIES
 @media (min-width: 1300px) {
     .main .jumbotron {
         height: 1000px;

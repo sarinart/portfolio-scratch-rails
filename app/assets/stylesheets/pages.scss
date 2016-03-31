@@ -201,17 +201,19 @@ body, html {
 //ABOUT PAGE
 
 .main .about-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://farm2.staticflickr.com/1536/24077160774_c2f7ff7ca4_h.jpg) no-repeat center center fixed;
-  background-size: cover;  
+//   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(https://scontent-yyz1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/190335_602971827944_3071680_n.jpg?oh=88904e50d9e9706e2de11544fb1e9632&oe=57875D58) no-repeat center center fixed;
+//   background-size: cover;  
+  height: 400px;
 }
 .main .about p {
     float: none;
     text-align: justify;
+    font-size: 20px;
 }
 
 .main .about a {
     float: none;
-    
+    font-size: 20px;
     text-decoration: underline;
 }
 

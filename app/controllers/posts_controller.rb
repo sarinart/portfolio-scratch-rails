@@ -10,9 +10,12 @@ class PostsController < ApplicationController
     def create
         @post = Post.new(post_params)
         
-        @post.save
-        flash.notice = "Post Created!"
-        redirect_to posts_path
+        if @post.save
+            flash.notice = "Post Created!"
+            redirect_to posts_path
+        else
+            render 'new'
+        end
     end
     
     def show

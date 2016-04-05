@@ -124,6 +124,14 @@
 
 .body-inside {
     min-height: 150px;
+    
+}
+
+.field_with_errors, .errors {
+    font-family: 'Roboto', sans-serif;
+    color: #d8f3d8;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 
